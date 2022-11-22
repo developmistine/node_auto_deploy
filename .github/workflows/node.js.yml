@@ -36,7 +36,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.SSH_KEY }}
         source: "./api-bundle.tar.gz"
-        target: "/home/me/app/my-app/"
+        target: "/home/ubuntu/app/my-app/"
 
     - name: Compose build file on server
       uses: fifsky/ssh-action@master
