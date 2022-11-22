@@ -1,0 +1,23 @@
+{
+  "name": "node-github-action-deploy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:banyawat/node-github-action-deploy.git",
+  "author": "Banyawat Kaewsamer <bunyawat.38@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.ts -w src/ --exec ts-node -e ts,js,grahpql",
+    "build": "rimraf ./build && tsc",
+    "start": "node ./build/server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "rimraf": "3.0.2",
+    "typescript": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.6",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0"
+  }
+}
