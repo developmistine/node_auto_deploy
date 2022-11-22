@@ -48,4 +48,5 @@ jobs:
           pm2 stop MyApp
           tar -xzf /home/ubuntu/app/my-app/api-bundle.tar.gz -C /home/ubuntu/app/my-app/
           pm2 start MyApp
+
       
