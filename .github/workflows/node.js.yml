@@ -46,6 +46,6 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         command: |
           pm2 stop MyApp
-          tar -xzf /home/me/app/my-app/api-bundle.tar.gz -C /home/me/app/my-app/
+          tar -xzf /home/ubuntu/app/my-app/api-bundle.tar.gz -C /home/ubuntu/app/my-app/
           pm2 start MyApp
       
